@@ -10,9 +10,13 @@
   <div class="login-page">
       <div class="form">
           <form class="register-form">
-            <input type="text" id="user" placeholder="Enter Username" name="username" >
+             <input type="text" id="fname" placeholder="First Name" name="firstname" >
+            <label for="" id="fnameMsg"></label>
+            <input type="text" id="lname" placeholder="Last Name" name="lastname" >
+            <label for="" id="lnameMsg"></label>
+            <input type="text" id="user" placeholder="Username" name="username" >
             <label for="" id="userMsg"></label>
-            <input type="password" id="psw" placeholder="Enter Password" name="password" >
+            <input type="password" id="psw" placeholder="Password" name="password" >
             <label for="" id="pswMsg"></label>
           <input type="text" placeholder="Email" id="email">
           <label for="" id="emailMsg"></label>
