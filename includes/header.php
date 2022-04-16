@@ -6,6 +6,7 @@
             <div class="links">
                 <a  href="index.php">Home</a>
                 <a  href="products.php">Products</a>
+                <a  href="news.php">News</a>
                 <a class="active" href="about.php">About</a>
                 <a href="contact.php">Contact</a>
                 <div class="LogIn">
