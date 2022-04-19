@@ -1,6 +1,7 @@
 <?php
 
 	class User{
+	    private $id;
 	    private $fname;
 	    private $lname;
 	    private $username;
@@ -10,7 +11,8 @@
 
 
 
-    	function __construct($fname,$lname,$username,$email,$password,$role){
+    	function __construct($id,$fname,$lname,$username,$email,$password,$role){
+	    $this->id = $id;
             $this->fname = $fname;
             $this->lname = $lname;
             $this->username = $username;
@@ -19,6 +21,9 @@
             $this->role = $role;
 
     	}
+	function getId(){
+			return $this->id;
+		}
 
     	function getFname(){
        	   	return $this->fname;
