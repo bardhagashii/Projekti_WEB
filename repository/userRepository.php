@@ -18,8 +18,8 @@ class UserRepository{
         $sql = "INSERT INTO users (UserID,Emri,Mbiemri,Username,Email,Password,Role) VALUES (?,?,?,?,?,?,?)";
 
         $statement = $conn->prepare($sql);
-
-        $statement->execute(['2','Bardha','Gashi','whitish','bardhagashi@hotmail.com','Bardha456','admin']);
+        
+        $statement->execute(['3','Dardan','Kabashi','Kabo','dardankabashi@hotmail.com','Dardan456','admin']);
 
         echo "<script> alert('User has been inserted successfuly!'); </script>";
 
