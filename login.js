@@ -9,7 +9,7 @@ button.addEventListener("click", function(event){
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
 
-  if(username == ""  username == null){
+  if(username == "" || username == null){
     usernameMsg.innerText="Please fill the username field!";
     event.preventDefault();
   }else{
@@ -22,7 +22,7 @@ button.addEventListener("click", function(event){
 
 }
 
-  if (password == ""  password == null) {
+  if (password == "" || password == null) {
     passwordMsg.innerText = "Please fill the password field!";
     event.preventDefault();
   } else {
@@ -34,3 +34,5 @@ button.addEventListener("click", function(event){
     }
   }
 });
+
+//register validaiton
