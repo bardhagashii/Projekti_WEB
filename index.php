@@ -1,3 +1,8 @@
+
+<?php include 'includes/header.php'; 
+session_start();
+
+?>
 <!DOCTYPE html>
 <html>
 
@@ -10,28 +15,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 </head>
+<div class="account">
+				<img class="nav-link" src="img/avatar.png" alt="avatar-icon" height="24px">
+
+				<?php if(isset($_SESSION['username'])){
+					echo "<p class='nav-link'><a href='dashboard.php'>".$_SESSION['username']." Profile</a></p>";
+				}
+				else{
+					echo "<p class='nav-link'><a href='logIn.php' target='_blank'>Account</a></p>";
+				}
+					?>		
+			</div>
 
 <body>
     <header>
 
-
-        <div class="nav-area">
-            <div class="container">
-                <div class="logo">
-                    <img src="img/bd.jpg" alt="logo">
-                    <div class="links">
-                        <a class="active" href="index.html">Home</a>
-                        <a href="products.html">Products</a>
-                        <a href="about.html">About</a>
-                        <a href="contact.html">Contact</a>
-                        <div class="LogIn">
-                            <a href="LogIn.html">Log In/Register </a>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="welcome-text">
             <h1>Let us be your Best Decision</h1>
         </div>
@@ -75,7 +73,7 @@
         </div>
     </div>
 
-            <div class="contact-us">
+    <div class="contact-us">
         <div class="heading-design">
             <div class="icon-box">
                 <i style="font-size:65px"class="fas fa-tablet-alt"></i>
@@ -92,7 +90,9 @@
             </div>
         </div>
     </div>
-         <div class="div2">
+  
+    
+        <div class="div2">
             <div style="text-align: center; margin-top: 70px; margin-bottom: 40px;">
                 <h2>Payment Method</h2>
 
@@ -109,21 +109,10 @@
             </div>
         </div>
     </div>
-
-    <footer class="footer-bg">
-        <div class="footer-content">
-            <a href="https://www.instagram.com/?hl=en" target="_blank"><i style="color: cornsilk;" class="fab fa-instagram fa-2x"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i style="color: cornsilk;" class="fab fa-facebook fa-2x"></i></a>
-            <a href="https://twitter.com/?lang=en" target="_blank"><i style="color: cornsilk;" class="fab fa-twitter fa-2x"></i></a>
-        </div>
-        <div class="footer-content">
-            <p style="color: white; margin-top: 20px;">All Rights Reserved &copy; BestDecision, 2021</p>
-        </div>
-    </footer>
+   
+    <?php include 'includes/footer.php'; ?>
 
 
 </body>
 
 </html>
-   
-       
